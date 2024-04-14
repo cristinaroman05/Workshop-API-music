@@ -1,0 +1,31 @@
+{
+  "name": "19.3-workshop-api-music",
+  "version": "1.0.0",
+  "description": "api musica",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "seed:user": "node ./seeds/user.seed.js",
+    "seed:artist": "node ./seeds/artist.seed.js",
+    "seed:song": "node ./seeds/song.seed.js",
+    "seed:song-relations": "node ./seeds/song-relations.seed.js",
+    "seed:all": "npm run seed:user && npm run seed:artist && npm run seed:song && npm run seed:song-relations"
+  },
+  "keywords": [
+    "node",
+    "mongoose"
+  ],
+  "author": "Cristina",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.0.0",
+    "express": "^4.19.2",
+    "husky": "^9.0.11",
+    "mongoose": "^8.3.1",
+    "node": "^18.20.2",
+    "prettier": "^3.2.5"
+  }
+}
